@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to the Color Casino!</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Welcome to the Color Casino!</h1>
+    <br>
+    <div>
+        <div id="slots">
+            <div id="wheel1" class="wheel"></div>
+            <div id="wheel2" class="wheel"></div>
+            <div id="wheel3" class="wheel"></div>
+        </div>
+        </div class="tokens">
+            <h4>You have <span id="wallet"></span> tokens remaining</h4>
+        <div>
+        <div id="reels">
+            <h3>How Many Wheels?</h3>
+            <input type="radio" id="three" name="wheels" value="3" checked>
+            <label for="three">3</label>
+            <input type="radio" id="four" name="wheels" value="4">
+            <label for="four">4</label><br>
+        </div>
+        <div id="multiplier">
+            <h3>Choose Your Multiplier</h3>
+            <input type="radio" id="times1" name="mult" value="1" checked>
+            <label for="times1">1x</label>
+            <input type="radio" id="times3" name="mult" value="3">
+            <label for="times3">3x</label>
+            <input type="radio" id="times5" name="mult" value="5">
+            <label for="times5">5x</label>
+            <input type="radio" id="times10" name="mult" value="10">
+            <label for="times10">10x</label>
+        </div>
+        <div id="bet">
+            <h3>Place Your Bet</h3>
+            <input type="radio" id="one" name="bet" value="1" checked>
+            <label for="one">1 Token</label>
+            <input type="radio" id="five" name="bet" value="5">
+            <label for="five">5 Tokens</label>
+            <input type="radio" id="ten" name="bet" value="10">
+            <label for="ten">10 Tokens</label>
+            <input type="radio" id="twentyfive" name="bet" value="25">
+            <label for="twentyfive">25 Tokens</label>
+            <input type="radio" id="fifty" name="bet" value="50">
+            <label for="fifty">50 Tokens</label>
+            <input type="radio" id="onehundred" name="bet" value="100">
+            <label for="onehundred">100 Tokens</label>
+        </div>
+        <div>
+            <br>
+            <button type="button" onclick="spin()">SPIN!</button>
+        </div>
+
+        <button type="button" id="newgame" onclick="newGame()">New Game</button>
+    </div>
+    <audio id="win">
+        <source src="./win.mp3" type="audio/mp3" preload="auto">
+    </audio>
+    <script src="./scripts.js"></script>
+</body>
+</html>
